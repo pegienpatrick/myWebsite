@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div style="width:100%;text-align: center;display: block;" id="header">0 Kms Travelled</div>
+    <div id="main">
+        <div id="controls" style="display: block;">
+            <form id="aircraftForm">
+                <label for="engineWeight">Engine Weight:(Kgs)</label>
+                <input type="number" id="engineWeight">
+
+                <label for="wingsWeight">Wings Weight:(kgs)</label>
+                <input type="number" id="wingsWeight" >
+
+                <label for="tailWeight">Tail Weight:(kgs)</label>
+                <input type="number" id="tailWeight" >
+
+                <button type="button" id="confirmButton">Confirm</button>
+            </form>
+
+            <label for="speedInput">Speed:</label>
+            <input type="range" id="speedInput" min="1" max="10" value="2">
+
+            <button id="startButton">Start</button>
+        </div>
+
+        <canvas id="aircraftCanvas"></canvas>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
